@@ -16,7 +16,7 @@ package org.dimigo.oop;
  */
 public class PiggyBank {
 	private static int balance;
-	public static void putMoney(String member, int amount){
+	public static void putMoney(FamilyMember member, int amount){
 		System.out.println(member + " : " + amount + "원 넣음");
 		balance += amount;
 	}
