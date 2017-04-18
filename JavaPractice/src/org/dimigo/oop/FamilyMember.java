@@ -24,6 +24,7 @@ public class FamilyMember {
 	}
 	
 	public FamilyMember(String memberName){
+		this.memberName = memberName;
 		memberCnt++;
 	}
 
