@@ -23,13 +23,13 @@ public class PiggyBankTest {
 		FamilyMember brother = new FamilyMember("남동생");
 		
 		FamilyMember.printMemberCnt();
-		PiggyBank.putMoney("아빠", 10000);
-		PiggyBank.putMoney("엄마", 5000);
-		PiggyBank.putMoney("나", 2000);
-		PiggyBank.putMoney("남동생", 1000);
+		PiggyBank.putMoney(father, 10000);
+		PiggyBank.putMoney(mother, 5000);
+		PiggyBank.putMoney(me, 2000);
+		PiggyBank.putMoney(brother, 1000);
 		PiggyBank.printBalance();
 		
-		PiggyBank.putMoney("나", 1000);
+		PiggyBank.putMoney(me, 1000);
 		PiggyBank.printBalance();
 		
 	}
