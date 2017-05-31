@@ -29,18 +29,10 @@ public class DBTest {
 	}
 	
 	private static void crud(IDBManager db){
-		if (db instanceof OracleDB){
-			((OracleDB)db).insert();
-			((OracleDB)db).search();
-			((OracleDB)db).update();
-			((OracleDB)db).delete();
-		}
-		else if (db instanceof SybaseDB){
-			((SybaseDB)db).insert();
-			((SybaseDB)db).search();
-			((SybaseDB)db).update();
-			((SybaseDB)db).delete();
-		}
+		db.insert();
+		db.update();
+		db.delete();
+		db.search();
 	}
 
 }
