@@ -36,7 +36,7 @@ public class Music {
 	}
 
 	public void setSinger(String singer) {
-		singer = singer;
+		this.singer = singer;
 	}
 
 	public String toString() {
